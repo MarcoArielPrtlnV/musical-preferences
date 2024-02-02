@@ -1,0 +1,16 @@
+{
+  "musical_preferences": [
+    {
+      "id": "1",
+      "user_name": "Marco Ariel",
+      "artist_or_band_name": "David Bowie",
+      "song_name": "Starman"
+    },
+    {
+      "id": "585b",
+      "user_name": "Luis",
+      "artist_or_band_name": "Bob Dylan",
+      "song_name": "Like a Rolling Stone"
+    }
+  ]
+}

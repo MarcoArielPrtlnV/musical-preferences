@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <title>Musical Preferences</title>
+</head>
+<body>
+
+    <section id="registration">
+
+        <article class="fieldset">
+
+            <legend>Musical Preferences</legend>
+            
+            <form class="preferences-form">
+
+                <div class="row">
+                    <!-- <label for="name">Your Name</label> -->
+                    <input type="text" placeholder="Your Name" name="yourname" id="your-name" required>
+
+                </div>
+
+                <div class="row">
+                    <!-- <label for="artist">Artist</label> -->
+                    <input type="text" placeholder="Artist or Band Name" name="artist" id="artist-name" required>
+                </div>
+
+                <div class="row">
+                    <!-- <label for="artistsong">Song</label> -->
+                    <input type="text" placeholder="Song" name="song" id="artist-song" required>
+                </div>
+
+                <input type="submit" value="Send">
+                <input type="hidden" name="id">
+            </form>
+
+        </article>
+
+        <article>
+
+            <h2>View Preferences</h2>
+
+            <table class="users-table">
+
+                <thead>
+                    <tr>
+                        <th>User</th>
+                        <th>Artist</th>
+                        <th>Song</th>
+                    </tr>
+                </thead>
+
+                <tbody id="t-body"></tbody>
+
+            </table>
+        </article>
+
+    </section>
+
+    <template id="template">
+
+        <tr>
+            <td class="user-name"></td>
+            <td class="artist-band-name"></td>
+            <td class="song"></td>
+
+            <td class="buttons">
+                <button class="edit">Edit</button>
+                <button class="delete">Delete</button>
+            </td>
+        </tr>
+
+    </template>
+
+    <script src="./main.js"></script>
+
+</body>
+</html>
